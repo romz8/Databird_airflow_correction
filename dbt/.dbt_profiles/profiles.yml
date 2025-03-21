@@ -1,0 +1,9 @@
+my_project:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: vast-descent-437516-b9
+      dataset: projet_final_bike 
+      keyfile: /opt/airflow/dbt/bigqueryKey.json

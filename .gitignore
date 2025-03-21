@@ -1,6 +1,14 @@
-target/
-dbt_packages/
-logs/
-*.json
+# Ignore inside dbt/ only:
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+
+# Ignore Python artifacts anywhere:
 *.pyc
+__pycache__/
+
+# Ignore .env in the root directory only:
 .env
+
+# Ignore .json files globally except in dbt/:
+*.json
